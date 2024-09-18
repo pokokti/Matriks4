@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix kel 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">MATRIKS </a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#Determinan">Determinan</a></li>
+                    <li><a href="#invers">Invers</a></li>
+                    <li><a href="#Adjoint">Adjoint</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSexXYadiFGBTPUSNlf57Kqf0fHj3U9oaMgbaDOjzYOr1nSY4A/viewform?usp=sf_link">Soal</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <img class="gambar" src="https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg?t=st=1726486083~exp=1726489683~hmac=e16e8ec8dd2fdc9793cd2c113c6fd2d27753ee23b26913b8b52254c8a8fa50d0&w=900"/>
+        <!--Determinan-->
+        <section id="Determinan">
+            <div class="kolom">
+                <p class="deskripsi">MATRIKS </p>
+                <h2 id="bagian1">Determinan</h2>
+                <h3>Pengertian</h3>
+                <p>Determinan adalah nilai yang dapat dihitung dari unsur-unsur suatu matrik persegi. nilai yang dapat dihitung dari unsur suatu matriks persegi. Determinan matriks A ditulis dengan tanda det(A), det A, atau |A|. Determinan dapat dianggap sebagai faktor penskalaan transformasi yang digambarkan oleh matriks.</p> 
+                <p>Determinan memiliki 2, yaitu determinan ordo 2x2 dan determinan ordo 3x3</p><br>
+                <img class="Matrix" src="Determinan.jpg"/> <br><br>
+                <h3>Determinan ordo 2x2</h3>
+                <p>Misalkan kita punya matrik A yang elemennya a,b,c,d yang ditulis seperti ini :</p>
+                <img class="Matrix" src="2x2.jpg"/>
+                <p>Maka determinan A akan kita tuliskan : <br>
+                    Det A= |A|</p><br>
+                <p>Cara menghitung determinan 2x2 yaitu : </p>
+                <img src="rumus 2x2.jpg"/>
+                <p>Mudah bukan cara menghitung Determinan ordo 2x2 </p><br><br>
+                <h3>Determinan ordo 3x3</h3>
+                <p>Cara menentukan determinan 3 x 3 yaitu dengan cara sarrus. </p><br>
+                <p>misal kita memiliki matriks A : </p>
+                <img src="3x3.jpg"/>
+                <p>berikut adalah tahap tahap nya : </p>
+                <ul>
+                    <li><p>Determinan disusun ulang dengan penambahan 2 baris dan 3 kolom kemudian buat garis diagonal ke kanan ( warna merah ) dengan operasional</p></li>
+                    <li><p>kemudian buat garis diagonal ke kanan ( warna merah ) dengan operasional penjumlahan kemudian diagonal ke kiri (garis hijau) dengan operasional pengurangan.</p></li>
+                    <img src="rumus 3x3.jpg"/>
+                    <li><p>kita kalikan mengikuti garis sehingga akan kita dapatkan rumus menentukan determinan matriks 3 × 3 sebagai berikut: <br>|A| =a.e.i + b.f.g + c.d.h – c.e.g – a.f.h – b.d.i</p></li>
+                </ul>
+            </div>
+        </section>
+        <!--Invers-->
+        <section id="invers">
+            <div class="kolom">
+                <h2>Invers</h2>
+                <h3>Pengertian</h3>
+                <p>Invers matriks adalah sebuah kebalikan (invers) dari kedua matriks. Apabila matriks tersebut dikalikan akan menghasilkan matriks persegi (AB = BA = |). Simbol dari invers matriks adalah pangkat -1 dan terletak di atas hurufnya. Sebagai contoh, matriks B adalah invers matriks A sehingga ditulis B = A–1 dan matriks A adalah invers dari matriks B ditulis A = B-1. Matriks A dan B merupakan dua matriks yang saling invers (berkebalikan). Invers matriks terdiri dari dua jenis, yaitu matriks persegi 2×2 dan matriks 3×3.</p> <br>
+                <img class="macam" src="invers.png"/><br><br>
+                <h3>Invers ordo 2x2</h3>
+                <p>Rumus dari Invers ordo 2x2 yaitu</p>
+                <img class="invers2x2" src="invers 2x2.jpg"/>
+                <p>langkah langkah menyelesaikannya yaitu : </p>
+                <ul>
+                    <li><p>Tukar elemen-elemen pada diagonal utamanya.</p>
+                    <li><p>Berikan tanda negatif pada elemen-elemen lainnya.</p></li>
+                    <li><p>Bagilah setiap elemen matriks dengan determinannya.</p></li>
+                </ul><br><br>
+                <h3>Invers ordo 3x3</h3><br>
+                <p>Rumus dari ordo 3x3 yaitu : </p><br>
+                <img class="invers3x3" src="invers 3x3.png"/><br><br>
+                <p>Untuk menentukan determinan matriks 3×3, kita bisa menggunakan dua cara, yaitu metode Sarrus dan Minor-Kofaktor.</p>
+                <p>Cara menentukan kofaktor matriks aij, yaitu Cij = (-1)i+jMij, di mana Mij adalah minor dari matriks Aij, sedangkan Cij adalah kofaktor A atau Kof(A).</p><br>
+                <img src="KOF.gif"/><br><br>
+                <p>Berarti, C11 = (-1)^1+1 M11=M11 , C12= (-1)^1+2 M12= –M12 , dst sampai dihasilkan seperti ini.</p><br>
+                <img src="kof a.gif"/><br>
+                <p>Selanjutnya kita cari determinannya, dengan cara Mij = det(Aij). Misalnya kita ambil contoh M11 = det(A11) = <img src="https://latex.codecogs.com/gif.latex?\begin{vmatrix}&space;a_{22}&space;&&space;a_{21}\\&space;a_{32}&space;&&space;a_{33}&space;\end{vmatrix}"/> <br> (menghilangkan elemen baris ke-1 dan kolom ke-1, sehingga hanya diperoleh ordo 2×2 untuk setiap elemennya), dst sehingga diperoleh seperti ini.</p><br><br>
+                <img src="kof2.gif"/>
+            </div>
+        </section>
+        <!--Adjoint-->
+        <section id="Adjoint">
+            <div class="kolom">
+                <h2>Adjoint</h2>
+                <h3>Pengertian</h3>
+                <p>Adjoin matriks merupakan tranpose dari matriks kofaktor. Adjoin sering disingkat dengan Adj. Misalkan matriks A, maka adjoin A ditulis Adj (A). </p>
+                <p>Tranpose sendiri maksudnya adalah pertukaran elemen pada baris menjadi kolom atau kolom menjadi baris. Adjoin matriks digunakan dalam menentukan invers matriks.</p>
+                <img class="Invers3" src="adj.png"/><br>
+                <p>Berikut Sifat Sifat dari Adjoin :</p> <br>
+                <ul>
+                    <li><p>Jika 0 adalah matriks nol dan I adalah matriks identitas maka, adj (0) = 0 dan adj (I) = I </p></li><br>
+                    <li><p>adj(B^T) = adj(B)^T , di sini B^T adalah transpos dari matriks B </p></li> <br>
+                    <li><p>Adjoint dari matriks B dapat didefinisikan sebagai hasil perkalian B dengan adjoint-nya yang menghasilkan matriks diagonal yang entri diagonalnya adalah determinan det(B). B adj(B) = adj(B) B = det(B) I, di mana I adalah matriks identitas.</p></li> <br>
+                    <li><p>Misalkan C adalah matriks persegi, maka adj(BC) = adj(C) adj(B)</p></li> <br>
+                    <li><p>Untuk setiap bilangan bulat non-negatif k, adj(B^k) = adj(B)^k.</p></li> <br>
+                    <li><p>Adjoin dari matriks diagonal adalah matriks diagonal lagi.</p></li><br>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="tengah">
+                <div class="kolom">
+                    <h1 class="deskripsi">Kelompok 4</h1>
+                    <p>M Takhlis Griska Rafi (070)</p>
+                    <p>Josua Moreno Silitonga (091)</p>
+                    <p>Pniel Alfrado Salakay (092)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 
